@@ -1,8 +1,9 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
 import VideoCardList from "./VideoCardList";
 import SectionHeader from "../Atomics/SectionHeader/SectionHeader";
+import { Col, Row } from "react-bootstrap";
 
 const SingleVideoRight = () => {
 	return (

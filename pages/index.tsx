@@ -3,10 +3,18 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Homepage from '@/components/Homepage/Homepage'
+import ContentWrapper from '@/components/Atomics/ContentWrapper/ContentWrapper'
+import { Container } from 'react-bootstrap'
+import TopCategory from '@/components/Homepage/TopCategory'
+import VideoBlock from '@/components/Homepage/VideoBlock'
+import PopularChannels from '@/components/Homepage/PopularChannels'
+import FatFooter from '@/components/Footer/FatFooter'
+import Main from '@/layouts/Main'
+import TopMobileSearch from '@/components/Homepage/TopMobileSearch'
 
-const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+
+ function Home() {
   return (
     <>
       <Head>
@@ -15,7 +23,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Homepage/>
+ 
+    
+      <ContentWrapper>
+        <Container fluid className="pb-0">
+          <TopMobileSearch />
+          <TopCategory />
+          <hr />         
+          {/* <h2 onClick={handleClick}>Click me oni chan</h2> */}
+          <VideoBlock />
+          <hr className="mt-0" />
+          <PopularChannels />
+        </Container>
+
+        <FatFooter />
+      </ContentWrapper>
+    
     </>
   )
 }
+
+Home.PageLayout = Main
+
+export default Home

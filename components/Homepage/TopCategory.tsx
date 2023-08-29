@@ -53,7 +53,7 @@ function TopCategory() {
           </Col>
 
           <Col md={12}>
-            {/* <TopCategoriesSlider /> */}
+            <TopCategoriesSlider />
           </Col>
         </Row>
       </div>

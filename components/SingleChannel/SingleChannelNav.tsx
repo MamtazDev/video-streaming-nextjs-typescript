@@ -1,17 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
+// import Nav from "react-bootstrap/Nav";
+// import NavDropdown from "react-bootstrap/NavDropdown";
+// import Navbar from "react-bootstrap/Navbar";
+// import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+// import FormControl from "react-bootstrap/FormControl";
 
 import { VerifiedTooltip } from "../Atomics/CustomCheckTooltips/CustomCheckTooltips";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { Button, Form, FormControl, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import Link from "next/link";
 
 const SingleChannelNav: React.FC = () => {
 	return (
@@ -24,24 +26,24 @@ const SingleChannelNav: React.FC = () => {
 
 					<Navbar.Toggle aria-controls="navbarSupportedContent" />
 
-					<Navbar.Collapse id="navbarSupportedContent">
+					<Navbar.Collapse id="navbarSupportedContent" >
 						<Nav as="ul" className="mr-auto">
 							<li className="nav-item active">
-								<Link className="nav-link " to="#">
+								<Link className="nav-link " href="#">
 									Videos
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" to={""}>Playlists</Link>
+								<Link className="nav-link" href={""}>Playlists</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" to={""}>Channels</Link>
+								<Link className="nav-link" href={""}>Channels</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" to={""}>Discussion</Link>
+								<Link className="nav-link" href={""}>Discussion</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" to={""}>About</Link>
+								<Link className="nav-link" href={""}>About</Link>
 							</li>
 
 							<NavDropdown title="Donate" id="basic-nav-dropdown">
@@ -57,7 +59,8 @@ const SingleChannelNav: React.FC = () => {
 								</NavDropdown.Item>
 							</NavDropdown>
 						</Nav>
-						<Form inline className=" my-2 my-lg-0">
+						<Form 
+					 className=" my-2 my-lg-0 d-flex	align-items-center">
 							<FormControl
 								type="text"
 								placeholder="Search"

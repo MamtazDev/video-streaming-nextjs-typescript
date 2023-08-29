@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
+
 import Slide from "../Atomics/Slide/Slide";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,6 +7,7 @@ import {
   faAngleLeft,
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import Slider from "react-slick";
 
 interface SampleArrowProps {
   onClick: () => void;

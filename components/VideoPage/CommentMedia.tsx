@@ -1,11 +1,12 @@
 import React from "react";
-import Media from "react-bootstrap/Media";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+// import Media from "react-bootstrap/Media";
+// import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
 import UsersWhoLiked from "./UsersWhoLiked";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
+import { Button, Card, Form } from "react-bootstrap";
 
 interface CommentMediaProps {
 	commentAuthor?: any;
@@ -26,7 +27,7 @@ const CommentMedia: React.FC<CommentMediaProps> = ({
 }) => {
 	return (
 		<div className="reviews-members">
-			<Media>
+			<Card>
 				<a href="#">
 					<img
 						className="mr-3"
@@ -34,7 +35,7 @@ const CommentMedia: React.FC<CommentMediaProps> = ({
 						alt="Generic placeholder image"
 					/>
 				</a>
-				<Media.Body>
+				<Card.Body>
 					<div className="media-body">
 						<div className="reviews-members-header">
 							<h6 className="mb-1">
@@ -61,8 +62,8 @@ const CommentMedia: React.FC<CommentMediaProps> = ({
 							<UsersWhoLiked title={""} />
 						</div>
 					</div>
-				</Media.Body>
-			</Media>
+				</Card.Body>
+			</Card>
 		</div>
 	);
 };
@@ -74,11 +75,11 @@ interface CustomMediaProps {
 const CustomMedia: React.FC<CustomMediaProps> = ({ commentCount }) => {
 	return (
 		<div className="reviews-members pt-0">
-			<Media>
+			<Card>
 				<a href="#">
 					<img className="mr-3" src="img/s1.png" alt="" />
 				</a>
-				<Media.Body>
+				<Card.Body>
 					<div className="form-members-body">
 						<Form.Control
 							as="textarea"
@@ -97,8 +98,8 @@ const CustomMedia: React.FC<CustomMediaProps> = ({ commentCount }) => {
 							COMMENT
 						</Button>
 					</div>
-				</Media.Body>
-			</Media>
+				</Card.Body>
+			</Card>
 		</div>
 	);
 };

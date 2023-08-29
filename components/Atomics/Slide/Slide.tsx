@@ -1,4 +1,4 @@
-import "./Slide.css"
+
 import React from "react";
 import { VerifiedTooltip } from "../CustomCheckTooltips/CustomCheckTooltips";
 

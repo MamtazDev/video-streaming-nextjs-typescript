@@ -1,5 +1,5 @@
 import React from "react";
-import "./Paginate.css";
+// import "./Paginate.css";
 
 const Paginate: React.FC = () => {
 	return (

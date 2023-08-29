@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function InfoCard({ label, icon, bg }) {
 	const splitLabel = label.split(" ");
@@ -26,15 +27,15 @@ export default function InfoCard({ label, icon, bg }) {
 							<b>{firstItem}</b> {secondItem}
 						</div>
 					</div>
-					<a
-						className="card-footer text-white clearfix small z-1"
+					<Link
+						className="card-footer text-white  small z-1 d-flex justify-content-between w-100"
 						href="#details"
 					>
-						<span className="float-left">View Details</span>
-						<span className="float-right">
+						<span className="d-block">View Details</span>
+					
 							<FontAwesomeIcon icon={faAngleRight} />
-						</span>
-					</a>
+					
+					</Link>
 				</div>
 			</div>
 		</>
