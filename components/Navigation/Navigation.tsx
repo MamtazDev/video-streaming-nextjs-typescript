@@ -63,7 +63,7 @@ const Navigation: React.FC<NavigationProps> = ({ props }) => {
 					id="sidebarToggle"
 					onClick={handleMenuToggle}
 				>
-					{/* <FontAwesomeIcon icon={faBars} /> */}
+					<FontAwesomeIcon icon={faBars} />
 					<i className="fas fa-star"></i>
 				</Button>
 				&nbsp;&nbsp;
