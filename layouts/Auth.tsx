@@ -1,4 +1,5 @@
-import Carousel from "@/components/Auth/Carousel";
+// import Carousel from "@/components/Auth/Carousel";
+import Carousel from "@/components/Navigation/Carousel";
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 
